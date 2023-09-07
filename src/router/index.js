@@ -1,17 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DesignSystem from '../views/DesignSystem.vue'
-import DesignSystemAvailableColors from '../views/DesignSystem/AvailableColors.vue'
+import DocumentationMain from '@/views/DocumentationMain.vue'
+import DocumentationDocumentationColors from '../views/Documentation/DocumentationColors.vue'
+import DocumentationButtons from '@/views/Documentation/DocumentationButtons.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [{
     path: '/',
-    name: 'DesignSystem',
-    component: DesignSystem,
+    name: 'Documentation',
+    component: DocumentationMain,
     children: [{
       path: 'colors',
-      name: 'Colors',
-      component: DesignSystemAvailableColors
+      name: 'DocumentationColors',
+      component: DocumentationDocumentationColors
+    }, {
+      path: 'buttons',
+      name: 'DocumentationButtons',
+      component: DocumentationButtons
     }]
   }]
 })
