@@ -8,6 +8,7 @@
 .documentation-main {
   display: grid;
   height: 100%;
+  overflow-y: auto;
   width: 100%;
 }
 </style>

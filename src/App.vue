@@ -21,4 +21,8 @@ import SideBar from '@/components/SideBar.vue'
   height: 100%;
   width: 100%;
 }
+
+.content {
+  height: 100vh;
+}
 </style>
