@@ -63,13 +63,15 @@ import DsButton from '@/components/DsButton.vue'
 <style lang="scss" scoped>
 .documentation-buttons {
   justify-content: start;
-  display: grid;
-  gap: 20px;
-  padding: var(--padding-3);
+  padding: var(--padding-3-square);
 
   &__group {
     display: flex;
     gap: 32px;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
   }
 }
 </style>
