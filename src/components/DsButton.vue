@@ -155,7 +155,7 @@ defineProps({
     border: 2px solid var(--background-color);
     box-shadow: none;
     --text-color: var(--light-text-color);
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in-out;
 
     &:hover {
       box-shadow: 0 0 50px 50px var(--background-color) inset;
