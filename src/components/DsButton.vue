@@ -60,6 +60,10 @@ defineProps({
     &:hover {
       --text-color: var(--light-text-color);
     }
+
+    &:active {
+      --text-color: var(--light-text-color);
+    }
   }
 
   &--indigo {
@@ -67,6 +71,10 @@ defineProps({
     --text-color: var(--light-text-color);
 
     &:hover {
+      --text-color: var(--light-text-color);
+    }
+
+    &:active {
       --text-color: var(--light-text-color);
     }
   }
@@ -78,6 +86,10 @@ defineProps({
     &:hover {
       --text-color: var(--light-text-color);
     }
+
+    &:active {
+      --text-color: var(--light-text-color);
+    }
   }
 
   &--chocolate {
@@ -85,6 +97,10 @@ defineProps({
     --text-color: var(--dark-text-color);
 
     &:hover {
+      --text-color: var(--dark-text-color);
+    }
+
+    &:active {
       --text-color: var(--dark-text-color);
     }
   }
@@ -96,6 +112,10 @@ defineProps({
     &:hover {
       --text-color: var(--dark-text-color);
     }
+
+    &:active {
+      --text-color: var(--dark-text-color);
+    }
   }
 
   &--neutral {
@@ -103,6 +123,10 @@ defineProps({
     --text-color: var(--dark-text-color);
 
     &:hover {
+      --text-color: var(--dark-text-color);
+    }
+
+    &:active {
       --text-color: var(--dark-text-color);
     }
   }
@@ -115,7 +139,14 @@ defineProps({
 
     &:hover {
       box-shadow: 0 0 10px 0 var(--background-color) inset, 0 0 10px 4px var(--background-color);
-      --text-color: var(--light-text-color);
+
+      &:not(:active) {
+        --text-color: var(--light-text-color);
+      }
+    }
+
+    &:active {
+      background-color: var(--background-color);
     }
   }
 
