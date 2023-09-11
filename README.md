@@ -24,10 +24,10 @@ npm run dev
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Run Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+npm run test
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
@@ -40,7 +40,7 @@ npm run lint
 
 ### Updating font files
 
-This Design System uses the Sans version of [IBM Plex typeface](ibm.com/plex). It is really cool!
+This Design System uses the Sans version of [IBM Plex typeface](ibm.com/plex). It is a really awesome project with a beautiful design.
 
 The font files are located in `public/fonts/IBM-Plex-Sans`.
 
