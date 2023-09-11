@@ -1,5 +1,6 @@
-@use "border-radiuses";
+@use "borders";
 @use "colors";
+@use "fonts";
 @use "paddings";
 @use "reset";
 @use "shadows";
@@ -8,10 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: var(--neutral-140);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'IBM Plex Sans';
   font-size: 15px;
   height: 100lvh;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
   position: fixed;
   text-rendering: optimizeLegibility;
