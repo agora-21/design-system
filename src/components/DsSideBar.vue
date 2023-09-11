@@ -31,6 +31,13 @@
       >
         Buttons
       </ds-side-bar-link>
+
+      <ds-side-bar-link
+        data-test="tags-link"
+        :route="{ name: 'DocumentationTags' }"
+      >
+        Tags
+      </ds-side-bar-link>
     </section>
   </nav>
 </template>

@@ -17,22 +17,19 @@ defineProps({
   color: {
     type: String,
     required: true,
-    validator: (color) =>
-      ['plum', 'indigo', 'blue', 'chocolate', 'green', 'neutral'].includes(color)
+    validator: (color) => ['plum', 'indigo', 'blue', 'chocolate', 'green', 'neutral'].includes(color)
   },
 
   size: {
     type: String,
     default: 'medium',
-    validator: (size) =>
-      ['small', 'medium', 'large'].includes(size)
+    validator: (size) => ['small', 'medium', 'large'].includes(size)
   },
 
   variant: {
     type: String,
     required: true,
-    validator: (variant) =>
-      ['filled', 'outline'].includes(variant)
+    validator: (variant) => ['filled', 'outline'].includes(variant)
   }
 })
 </script>

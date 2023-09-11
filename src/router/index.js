@@ -4,6 +4,7 @@ import DocumentationMain from '@/views/DocumentationMain.vue'
 
 import DocumentationButtons from '@/views/Documentation/DocumentationButtons.vue'
 import DocumentationColors from '@/views/Documentation/DocumentationColors.vue'
+import DocumentationTags from '@/views/Documentation/DocumentationTags.vue'
 import DocumentationTypography from '@/views/Documentation/DocumentationTypography.vue'
 
 const routes = [{
@@ -18,6 +19,10 @@ const routes = [{
     path: 'buttons',
     name: 'DocumentationButtons',
     component: DocumentationButtons
+  }, {
+    path: 'tags',
+    name: 'DocumentationTags',
+    component: DocumentationTags
   }, {
     path: 'typography',
     name: 'DocumentationTypography',

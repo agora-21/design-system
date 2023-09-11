@@ -1,5 +1,9 @@
 <template>
   <article class="documentation-buttons">
+    <h1 class="documentation-buttons__title">
+      Buttons
+    </h1>
+
     <div class="documentation-buttons__group">
       <ds-button color="plum" variant="filled">
         Click here
@@ -64,6 +68,11 @@ import DsButton from '@/components/DsButton.vue'
 .documentation-buttons {
   justify-content: start;
   padding: var(--padding-3-square);
+
+  &__title {
+    color: var(--neutral-30);
+    font: var(--font-title-1);
+  }
 
   &__group {
     display: flex;
