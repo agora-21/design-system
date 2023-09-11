@@ -1,8 +1,6 @@
 <template>
   <div class="documentation-main">
-    <nav class="sidebar">
-      <side-bar />
-    </nav>
+    <ds-side-bar />
 
     <main class="documentation-main__content">
       <router-view />
@@ -11,7 +9,7 @@
 </template>
 
 <script setup>
-import SideBar from '@/components/SideBar.vue'
+import DsSideBar from '@/components/DsSideBar.vue'
 </script>
 
 <style lang="scss" scoped>
