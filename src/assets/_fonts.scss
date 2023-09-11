@@ -1,3 +1,12 @@
 $font-prefix: 'fonts';
 
 @import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+
+:root {
+  --font-title-1: normal normal 400 2.197rem/1.5 "IBM Plex Sans";
+  --font-title-2: normal normal 400 1.69rem/1.5 "IBM Plex Sans";
+  --font-title-3: normal normal 500 1.3rem/1.5 "IBM Plex Sans";
+  --font-title-4: normal normal 500 1rem/1.5 "IBM Plex Sans";
+  --font-caption: normal normal 400 0.769rem/1.5 "IBM Plex Sans";
+  --font-body: normal normal 400 1rem/1.5 "IBM Plex Sans";
+}

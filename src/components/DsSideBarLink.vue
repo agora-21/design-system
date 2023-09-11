@@ -22,10 +22,11 @@ defineProps({
   color: var(--neutral-30);
   background-color: transparent;
   border-radius: var(--border-radius-2);
+  font: var(--font-body);
   padding: var(--padding-1);
   text-decoration: none;
-  width: 100%;
   transition: background-color 50ms ease-in-out;
+  width: 100%;
 
   &:hover {
     background-color: var(--neutral-120);

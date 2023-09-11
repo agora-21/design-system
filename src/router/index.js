@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import DocumentationMain from '@/views/DocumentationMain.vue'
-import DocumentationDocumentationColors from '../views/Documentation/DocumentationColors.vue'
+
 import DocumentationButtons from '@/views/Documentation/DocumentationButtons.vue'
+import DocumentationColors from '@/views/Documentation/DocumentationColors.vue'
+import DocumentationTypography from '@/views/Documentation/DocumentationTypography.vue'
 
 const routes = [{
   path: '/',
@@ -11,11 +13,15 @@ const routes = [{
   children: [{
     path: 'colors',
     name: 'DocumentationColors',
-    component: DocumentationDocumentationColors
+    component: DocumentationColors
   }, {
     path: 'buttons',
     name: 'DocumentationButtons',
     component: DocumentationButtons
+  }, {
+    path: 'typography',
+    name: 'DocumentationTypography',
+    component: DocumentationTypography
   }]
 }]
 
