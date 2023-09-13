@@ -67,7 +67,7 @@ import DsButton from '@/components/DsButton.vue'
 <style lang="scss" scoped>
 .documentation-buttons {
   justify-content: start;
-  padding: var(--padding-3-square);
+  padding: var(--padding-3-vertical);
 
   &__title {
     color: var(--neutral-30);

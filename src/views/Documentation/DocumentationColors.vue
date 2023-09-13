@@ -61,7 +61,7 @@ const VARIATIONS = [
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: var(--padding-2);
+    padding: var(--padding-2-horizontal);
     scroll-snap-align: center;
   }
 
@@ -76,7 +76,7 @@ const VARIATIONS = [
   }
 
   &__color-variation {
-    padding: var(--padding-1);
+    padding: var(--padding-1-horizontal);
   }
 }
 

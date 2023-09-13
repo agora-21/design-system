@@ -47,7 +47,7 @@ defineProps({
   color: var(--text-color);
   cursor: pointer;
   text-transform: uppercase;
-  padding: var(--padding-3);
+  padding: var(--padding-3-horizontal);
 
   // Colors
   &--plum {
