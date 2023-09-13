@@ -33,6 +33,13 @@
       </ds-side-bar-link>
 
       <ds-side-bar-link
+        data-test="flags-link"
+        :route="{ name: 'DocumentationFlags' }"
+      >
+        Flags
+      </ds-side-bar-link>
+
+      <ds-side-bar-link
         data-test="tags-link"
         :route="{ name: 'DocumentationTags' }"
       >
