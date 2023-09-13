@@ -33,26 +33,32 @@
 
   &__title-1 {
     font: var(--font-title-1);
+    margin-top: 16px;
   }
 
   &__title-2 {
     font: var(--font-title-2);
+    margin-top: 16px;
   }
 
   &__title-3 {
     font: var(--font-title-3);
+    margin-top: 16px;
   }
 
   &__title-4 {
     font: var(--font-title-4);
+    margin-top: 16px;
   }
 
   &__title-5 {
     font: var(--font-caption);
+    margin-top: 16px;
   }
 
   &__body {
     font: var(--font-body);
+    margin-top: 16px;
   }
 }
 </style>

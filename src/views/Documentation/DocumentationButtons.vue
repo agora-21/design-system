@@ -105,6 +105,7 @@ import DsButton from '@/components/DsButton.vue'
   &__description {
     color: var(--neutral-30);
     font: var(--font-body);
+    margin-top: 12px;
   }
 
   &__buttons-section {
