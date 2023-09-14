@@ -19,7 +19,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .ds-side-bar-link {
-  color: var(--neutral-30);
+  color: var(--neutral-40);
   background-color: transparent;
   border-radius: var(--border-radius-2);
   font: var(--font-body);

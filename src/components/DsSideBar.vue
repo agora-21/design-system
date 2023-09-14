@@ -57,10 +57,9 @@ import DsSideBarLink from './DsSideBarLink.vue'
 
 <style lang="scss" scoped>
 .side-bar {
-  background-image: linear-gradient(190deg, var(--neutral-130) 0%, var(--neutral-140) 100%);
-  border-right: 1px solid var(--neutral-130);
+  background-image: linear-gradient(190deg, var(--neutral-120) 0%, var(--neutral-130) 100%);
   box-shadow: var(--shadow-2);
-  color: var(--neutral-30);
+  color: var(--neutral-40);
   height: 100%;
   padding: var(--padding-2-horizontal);
 

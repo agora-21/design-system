@@ -48,30 +48,32 @@ defineProps({
     var(--dark-color) 20px,
     var(--dark-color) 40px
   );
-  border: 1px solid var(--neutral-100);
   border-radius: var(--border-radius-2);
-  color: var(--neutral-30);
+  box-shadow: var(--shadow-1);
+  color: var(--neutral-40);
   display: grid;
   padding: var(--padding-2-horizontal);
 
   &--info {
-    --light-color: var(--neutral-130);
-    --dark-color: var(--neutral-120);
+    --light-color: var(--neutral-110);
+    --dark-color: var(--neutral-100);
+
+    border: 1px solid var(--neutral-100);
   }
 
   &--warning {
-    --light-color: var(--chocolate-130);
-    --dark-color: var(--chocolate-120);
+    --light-color: var(--chocolate-110);
+    --dark-color: var(--chocolate-100);
   }
 
   &--error {
-    --light-color: var(--plum-130);
-    --dark-color: var(--plum-120);
+    --light-color: var(--plum-110);
+    --dark-color: var(--plum-100);
   }
 
   &--success {
-    --light-color: var(--green-130);
-    --dark-color: var(--green-120);
+    --light-color: var(--green-110);
+    --dark-color: var(--green-100);
   }
 }
 </style>

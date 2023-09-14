@@ -92,7 +92,7 @@ import DsButton from '@/components/DsButton.vue'
   padding: var(--padding-3-vertical);
 
   &__title {
-    color: var(--neutral-30);
+    color: var(--neutral-40);
     font: var(--font-title-1);
   }
 
@@ -103,7 +103,7 @@ import DsButton from '@/components/DsButton.vue'
   }
 
   &__description {
-    color: var(--neutral-30);
+    color: var(--neutral-40);
     font: var(--font-body);
     margin-top: 12px;
   }

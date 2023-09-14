@@ -40,32 +40,32 @@ defineProps({
 
   &--plum {
     --color: var(--plum-90);
-    --text-color: var(--neutral-30);
+    --text-color: var(--neutral-40);
   }
 
   &--indigo {
     --color: var(--indigo-90);
-    --text-color: var(--neutral-30);
+    --text-color: var(--neutral-40);
   }
 
   &--blue {
     --color: var(--blue-90);
-    --text-color: var(--neutral-30);
+    --text-color: var(--neutral-40);
   }
 
   &--chocolate {
     --color: var(--chocolate-90);
-    --text-color: var(--neutral-150);
+    --text-color: var(--neutral-140);
   }
 
   &--green {
     --color: var(--green-90);
-    --text-color: var(--neutral-150);
+    --text-color: var(--neutral-140);
   }
 
   &--neutral {
     --color: var(--neutral-90);
-    --text-color: var(--neutral-150);
+    --text-color: var(--neutral-140);
   }
 
   &--filled {
@@ -77,7 +77,7 @@ defineProps({
   &--outline {
     background-color: transparent;
     border: 1px solid var(--color);
-    color: var(--neutral-30);
+    color: var(--neutral-40);
   }
 }
 </style>

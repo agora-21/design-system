@@ -70,7 +70,7 @@ import DsTag from '@/components/DsTag.vue'
   padding: var(--padding-3-square);
 
   &__title {
-    color: var(--neutral-30);
+    color: var(--neutral-40);
     font: var(--font-title-1);
   }
 

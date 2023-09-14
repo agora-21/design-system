@@ -36,11 +36,8 @@ defineProps({
 
 <style lang="scss" scoped>
 .ds-button {
-  --light-text-color: var(--neutral-30);
-  --dark-text-color: var(--neutral-150);
-
-  --background-color: var(--plum-90);
-  --text-color: var(--light-text-color);
+  --light-text-color: var(--neutral-40);
+  --dark-text-color: var(--neutral-140);
 
   border: none;
   border-radius: var(--border-radius-3);
