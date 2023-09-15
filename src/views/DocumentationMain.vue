@@ -16,7 +16,9 @@ import DsSideBar from '@/components/DsSideBar.vue'
 .documentation-main {
   display: grid;
   grid-template-columns: 320px 1fr;
+  grid-template-rows: 100%;
   height: 100%;
+  overflow-y: auto;
   width: 100%;
 
   &__content {

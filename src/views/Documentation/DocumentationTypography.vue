@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
 .documentation-typography {
-  color: var(--neutral-40);
+  color: var(--neutral-60);
   padding: var(--padding-3-square);
 
   &__title-1 {

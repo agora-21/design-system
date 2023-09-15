@@ -24,11 +24,13 @@
           Primary colors
         </h2>
 
-        <color-row
+        <div
+          class="documentation-colors__variations"
           v-for="color in PRIMARY_COLORS"
           :key="color"
-          :color="color"
-        />
+        >
+          <color-variations :color="color" />
+        </div>
       </section>
 
       <section class="documentation-colors__colors-group">
@@ -36,11 +38,13 @@
           Secondary colors
         </h2>
 
-        <color-row
+        <div
+          class="documentation-colors__variations"
           v-for="color in SECONDARY_COLORS"
           :key="color"
-          :color="color"
-        />
+        >
+          <color-variations :color="color" />
+        </div>
       </section>
 
       <section class="documentation-colors__colors-group">
@@ -48,18 +52,31 @@
           Neutral colors
         </h2>
 
-        <color-row
+        <div
+          class="documentation-colors__variations"
           v-for="color in NEUTRAL_COLORS"
           :key="color"
-          :color="color"
-        />
+        >
+          <color-variations :color="color" />
+        </div>
+      </section>
+
+      <section class="documentation-colors__colors-group">
+        <h2 class="documentation-colors__subject">
+          Semantic colors
+        </h2>
+
+        <div class="documentation-colors__variations">
+          <semantic-colors />
+        </div>
       </section>
     </div>
   </article>
 </template>
 
 <script setup>
-import ColorRow from './DocumentationColors/ColorRow.vue'
+import ColorVariations from './DocumentationColors/ColorVariations.vue'
+import SemanticColors from './DocumentationColors/SemanticColors.vue'
 
 const PRIMARY_COLORS = ['plum', 'blue']
 const SECONDARY_COLORS = ['indigo', 'chocolate', 'green']
@@ -73,19 +90,21 @@ const NEUTRAL_COLORS = ['neutral']
   flex-direction: column;
   flex-wrap: nowrap;
   padding: var(--padding-3-vertical);
+  overflow-y: auto;
+  height: 100%;
 
   &__title {
-    color: var(--neutral-40);
+    color: var(--neutral-60);
     font: var(--font-title-1);
   }
 
   &__subject {
-    color: var(--neutral-40);
+    color: var(--neutral-60);
     font: var(--font-caption);
   }
 
   &__description {
-    color: var(--neutral-40);
+    color: var(--neutral-60);
     font: var(--font-body);
     margin-top: 12px;
   }
@@ -97,6 +116,12 @@ const NEUTRAL_COLORS = ['neutral']
   &__colors-group {
     &:not(:first-child) {
       margin-top: 32px;
+    }
+  }
+
+  &__variations {
+    &:not(:first-child) {
+      margin-top: 20px;
     }
   }
 }

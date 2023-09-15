@@ -40,7 +40,14 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.ds-flag {
+@keyframes barberpole {
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@mixin background-stripe {
+  animation: barberpole 12s linear infinite;
   background: repeating-linear-gradient(
     45deg,
     var(--light-color),
@@ -48,32 +55,54 @@ defineProps({
     var(--dark-color) 20px,
     var(--dark-color) 40px
   );
+  background-size: 200% 200%;
+}
+
+.ds-flag {
   border-radius: var(--border-radius-2);
   box-shadow: var(--shadow-1);
-  color: var(--neutral-40);
   display: grid;
   padding: var(--padding-2-horizontal);
 
-  &--info {
-    --light-color: var(--neutral-110);
-    --dark-color: var(--neutral-100);
+  &__title {
+    font: var(--font-title-4);
+  }
 
-    border: 1px solid var(--neutral-100);
+  &__description {
+    font: var(--font-body);
+  }
+
+  &--info {
+    background-color: var(--neutral-120);
+    border: 1px solid var(--neutral-90);
+    color: var(--neutral-60);
   }
 
   &--warning {
-    --light-color: var(--chocolate-110);
-    --dark-color: var(--chocolate-100);
+    @include background-stripe;
+
+    --light-color: var(--warning-yellow-100);
+    --dark-color: var(--warning-yellow-105);
+
+    color: var(--neutral-160);
   }
 
   &--error {
-    --light-color: var(--plum-110);
-    --dark-color: var(--plum-100);
+    @include background-stripe;
+
+    --light-color: var(--error-red-100);
+    --dark-color: var(--error-red-105);
+
+    color: var(--neutral-60);
   }
 
   &--success {
-    --light-color: var(--green-110);
-    --dark-color: var(--green-100);
+    @include background-stripe;
+
+    --light-color: var(--success-green-100);
+    --dark-color: var(--success-green-105);
+
+    color: var(--neutral-160);
   }
 }
 </style>

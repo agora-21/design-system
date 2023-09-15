@@ -57,9 +57,10 @@ import DsSideBarLink from './DsSideBarLink.vue'
 
 <style lang="scss" scoped>
 .side-bar {
-  background-image: linear-gradient(190deg, var(--neutral-120) 0%, var(--neutral-130) 100%);
+  background-color: var(--neutral-150);
+  border-right: 1px solid var(--neutral-140);
   box-shadow: var(--shadow-2);
-  color: var(--neutral-40);
+  color: var(--neutral-60);
   height: 100%;
   padding: var(--padding-2-horizontal);
 
@@ -72,7 +73,7 @@ import DsSideBarLink from './DsSideBarLink.vue'
   }
 
   &__section-caption {
-    color: var(--neutral-50);
+    color: var(--neutral-60);
     font: var(--font-caption);
   }
 }

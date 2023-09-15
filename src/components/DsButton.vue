@@ -36,8 +36,8 @@ defineProps({
 
 <style lang="scss" scoped>
 .ds-button {
-  --light-text-color: var(--neutral-40);
-  --dark-text-color: var(--neutral-140);
+  --light-text-color: var(--neutral-60);
+  --dark-text-color: var(--neutral-170);
 
   border: none;
   border-radius: var(--border-radius-3);
@@ -48,8 +48,8 @@ defineProps({
 
   // Colors
   &--plum {
-    --background-color: var(--plum-90);
-    --text-color: var(--light-text-color);
+    --background-color: var(--plum-100);
+    --text-color: var(--dark-text-color);
 
     &:hover {
       --text-color: var(--light-text-color);
@@ -61,7 +61,7 @@ defineProps({
   }
 
   &--indigo {
-    --background-color: var(--indigo-90);
+    --background-color: var(--indigo-100);
     --text-color: var(--light-text-color);
 
     &:hover {
@@ -74,7 +74,7 @@ defineProps({
   }
 
   &--blue {
-    --background-color: var(--blue-90);
+    --background-color: var(--blue-100);
     --text-color: var(--light-text-color);
 
     &:hover {
@@ -87,7 +87,7 @@ defineProps({
   }
 
   &--chocolate {
-    --background-color: var(--chocolate-90);
+    --background-color: var(--chocolate-100);
     --text-color: var(--dark-text-color);
 
     &:hover {
@@ -100,7 +100,7 @@ defineProps({
   }
 
   &--green {
-    --background-color: var(--green-90);
+    --background-color: var(--green-100);
     --text-color: var(--dark-text-color);
 
     &:hover {
@@ -113,7 +113,7 @@ defineProps({
   }
 
   &--neutral {
-    --background-color: var(--neutral-90);
+    --background-color: var(--neutral-100);
     --text-color: var(--dark-text-color);
 
     &:hover {
@@ -127,7 +127,7 @@ defineProps({
 
   // Variants
   &--filled {
-    background-color: var(--neutral-140);
+    background-color: var(--neutral-160);
     box-shadow: 0 0 50px 50px var(--background-color) inset;
     transition: all 50ms ease-in-out;
 
@@ -145,7 +145,7 @@ defineProps({
   }
 
   &--outline {
-    background-color: var(--neutral-140);
+    background-color: var(--neutral-160);
     border: 2px solid var(--background-color);
     box-shadow: none;
     --text-color: var(--light-text-color);
