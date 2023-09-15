@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-const SEMANTIC_COLORS = ['success-green', 'warning-yellow', 'error-red']
+const SEMANTIC_COLORS = ['success-green-100', 'warning-yellow-100', 'error-red-100']
 </script>
 
 <style lang="scss" scoped>
@@ -33,18 +33,18 @@ const SEMANTIC_COLORS = ['success-green', 'warning-yellow', 'error-red']
     min-height: 80px;
     min-width: 80px;
 
-    &--success-green {
-      background-color: var(--success-green);
+    &--success-green-100 {
+      background-color: var(--success-green-100);
       color: var(--neutral-160);
     }
 
-    &--warning-yellow {
-      background-color: var(--warning-yellow);
+    &--warning-yellow-100 {
+      background-color: var(--warning-yellow-100);
       color: var(--neutral-160);
     }
 
-    &--error-red {
-      background-color: var(--error-red);
+    &--error-red-100 {
+      background-color: var(--error-red-100);
       color: var(--neutral-60);
     }
   }
