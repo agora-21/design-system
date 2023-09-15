@@ -52,11 +52,11 @@ defineProps({
     --text-color: var(--dark-text-color);
 
     &:hover {
-      --text-color: var(--light-text-color);
+      --text-color: var(--dark-text-color);
     }
 
     &:active {
-      --text-color: var(--light-text-color);
+      --text-color: var(--dark-text-color);
     }
   }
 
@@ -75,14 +75,14 @@ defineProps({
 
   &--blue {
     --background-color: var(--blue-100);
-    --text-color: var(--light-text-color);
+    --text-color: var(--dark-text-color);
 
     &:hover {
-      --text-color: var(--light-text-color);
+      --text-color: var(--dark-text-color);
     }
 
     &:active {
-      --text-color: var(--light-text-color);
+      --text-color: var(--dark-text-color);
     }
   }
 
@@ -127,7 +127,7 @@ defineProps({
 
   // Variants
   &--filled {
-    background-color: var(--neutral-160);
+    background-color: transparent;
     box-shadow: 0 0 50px 50px var(--background-color) inset;
     transition: all 50ms ease-in-out;
 
@@ -145,7 +145,7 @@ defineProps({
   }
 
   &--outline {
-    background-color: var(--neutral-160);
+    background-color: transparent;
     border: 2px solid var(--background-color);
     box-shadow: none;
     --text-color: var(--light-text-color);
