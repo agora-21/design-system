@@ -1,8 +1,8 @@
 <template>
   <article class="documentation-tags">
-    <h1 class="documentation-tags__title">
+    <h2 class="documentation-tags__title">
       Tags
-    </h1>
+    </h2>
 
     <div class="documentation-tags__group">
       <ds-tag color="plum" variant="filled">

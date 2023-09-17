@@ -1,13 +1,13 @@
 <template>
   <article class="documentation-buttons">
-    <h1 class="documentation-buttons__title">
+    <h2 class="documentation-buttons__title">
       Buttons
-    </h1>
+    </h2>
 
     <section>
-      <h2 class="documentation-buttons__subject">
+      <h3 class="documentation-buttons__subject">
         When to use
-      </h2>
+      </h3>
 
       <p class="documentation-buttons__description">
         A button communicates actions users can take to interact with the page.
@@ -15,9 +15,9 @@
     </section>
 
     <section>
-      <h2 class="documentation-buttons__subject">
+      <h3 class="documentation-buttons__subject">
         When not to use
-      </h2>
+      </h3>
 
       <p class="documentation-buttons__description">
         A button should never be used as a navigational element to change URLs.

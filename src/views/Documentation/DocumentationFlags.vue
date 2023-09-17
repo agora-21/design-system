@@ -1,13 +1,13 @@
 <template>
   <article class="documentation-flags">
-    <h1 class="documentation-flags__title">
+    <h2 class="documentation-flags__title">
       Flags
-    </h1>
+    </h2>
 
     <section>
-      <h2 class="documentation-flags__subject">
+      <h3 class="documentation-flags__subject">
         When to use
-      </h2>
+      </h3>
 
       <p class="documentation-flags__description">
         A flag communicates an important message to the user that is emphasized in relation to the rest of the page.

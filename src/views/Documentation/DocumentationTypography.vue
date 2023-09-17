@@ -1,24 +1,24 @@
 <template>
   <article class="documentation-typography">
-    <h1 class="documentation-typography__title-1">
+    <p class="documentation-typography__title-1">
       h1 title
-    </h1>
+    </p>
 
-    <h2 class="documentation-typography__title-2">
+    <p class="documentation-typography__title-2">
       h2 title
-    </h2>
+    </p>
 
-    <h3 class="documentation-typography__title-3">
+    <p class="documentation-typography__title-3">
       h3 title
-    </h3>
+    </p>
 
-    <h4 class="documentation-typography__title-4">
+    <p class="documentation-typography__title-4">
       h4 title
-    </h4>
+    </p>
 
-    <h5 class="documentation-typography__title-5">
+    <p class="documentation-typography__title-5">
       H5 TITLE or caption
-    </h5>
+    </p>
 
     <p class="documentation-typography__body">
       Body text. Ipsum cupidatat consequat nisi aliqua. Cupidatat elit voluptate est labore voluptate voluptate incididunt eiusmod incididunt aute elit. Ea ex aliqua sunt do magna sit laborum exercitation aliquip ea. Aliquip fugiat reprehenderit in est excepteur est.
