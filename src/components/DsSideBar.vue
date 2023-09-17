@@ -1,5 +1,9 @@
 <template>
   <nav class="side-bar">
+    <h1 class="side-bar__title">
+      Design System
+    </h1>
+
     <section class="side-bar__section">
       <h2 class="side-bar__section-caption">
         Guidelines
@@ -64,16 +68,24 @@ import DsSideBarLink from './DsSideBarLink.vue'
   height: 100%;
   padding: var(--padding-2-horizontal);
 
+  &__title {
+    font: var(--font-title-2);
+  }
+
   &__section {
     align-items: start;
     align-content: start;
     display: grid;
     gap: 6px;
     justify-items: start;
+    margin-top: 12px;
+
+    &:first-of-type {
+      margin-top: 32px;
+    }
   }
 
   &__section-caption {
-    color: var(--neutral-60);
     font: var(--font-caption);
   }
 }
