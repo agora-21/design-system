@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="ds-side-bar-link"
+    class="ds-sidebar-link"
     data-test="link"
     :to="route"
   >
@@ -18,7 +18,7 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.ds-side-bar-link {
+.ds-sidebar-link {
   color: var(--neutral-60);
   background-color: transparent;
   border-radius: var(--border-radius-2);

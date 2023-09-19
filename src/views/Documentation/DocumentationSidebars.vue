@@ -1,61 +1,61 @@
 <template>
-  <article class="documentation-side-bar">
-    <h2 class="documentation-side-bar__title">
+  <article class="documentation-sidebar">
+    <h2 class="documentation-sidebar__title">
       Scroll Bars
     </h2>
 
-    <p class="documentation-side-bar__description">
+    <p class="documentation-sidebar__description">
       This scroll bar can be used in any desktop page.
     </p>
 
-    <p class="documentation-side-bar__description">
+    <p class="documentation-sidebar__description">
       The scrollbar should be fixed, have a 320px width and fill the visible body from top to bottom.
     </p>
 
-    <p class="documentation-side-bar__description">
+    <p class="documentation-sidebar__description">
       If there is a title, the bottom margin between it and the next content should be 32px.
     </p>
 
-    <p class="documentation-side-bar__description">
+    <p class="documentation-sidebar__description">
       The gap between links should be 6px.
     </p>
 
-    <div class="documentation-side-bar__example-container">
-      <ds-side-bar>
-        <h3 class="documentation-side-bar__example-title">
+    <div class="documentation-sidebar__example-container">
+      <ds-sidebar>
+        <h3 class="documentation-sidebar__example-title">
           Example Side Bar
         </h3>
 
-        <section class="documentation-side-bar__example-section">
-          <h4 class="documentation-side-bar__example-section-caption">
+        <section class="documentation-sidebar__example-section">
+          <h4 class="documentation-sidebar__example-section-caption">
             Guidelines
           </h4>
 
-          <ds-side-bar-link :route="{ name: 'DocumentationColors' }">
+          <ds-sidebar-link :route="{ name: 'DocumentationColors' }">
             Colors
-          </ds-side-bar-link>
+          </ds-sidebar-link>
         </section>
 
-        <section class="documentation-side-bar__example-section">
-          <h4 class="documentation-side-bar__example-section-caption">
+        <section class="documentation-sidebar__example-section">
+          <h4 class="documentation-sidebar__example-section-caption">
             Components
           </h4>
 
-          <ds-side-bar-link :route="{ name: 'DocumentationButtons' }">
+          <ds-sidebar-link :route="{ name: 'DocumentationButtons' }">
             Buttons
-          </ds-side-bar-link>
+          </ds-sidebar-link>
 
-          <ds-side-bar-link :route="{ name: 'DocumentationFlags' }">
+          <ds-sidebar-link :route="{ name: 'DocumentationFlags' }">
             Flags
-          </ds-side-bar-link>
+          </ds-sidebar-link>
         </section>
-      </ds-side-bar>
+      </ds-sidebar>
 
-      <div class="documentation-side-bar__example-content">
+      <div class="documentation-sidebar__example-content">
         <img
           src="/images/documentation/scroll_website_example.png"
           alt="An example website image"
-          class="documentation-side-bar__example"
+          class="documentation-sidebar__example"
         >
       </div>
     </div>
@@ -63,12 +63,12 @@
 </template>
 
 <script setup>
-import DsSideBar from '@/components/DsSideBar.vue'
-import DsSideBarLink from '@/components/DsSideBarLink.vue';
+import DsSidebar from '@/components/DsSidebar.vue'
+import DsSidebarLink from '@/components/DsSidebarLink.vue';
 </script>
 
 <style lang="scss" scoped>
-.documentation-side-bar {
+.documentation-sidebar {
   padding: var(--padding-3-vertical);
 
   &__title {

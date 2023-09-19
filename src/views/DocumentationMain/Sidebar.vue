@@ -1,79 +1,79 @@
 <template>
-  <ds-side-bar>
-    <h1 class="side-bar__title">
+  <ds-sidebar>
+    <h1 class="sidebar__title">
       Design System
     </h1>
 
-    <section class="side-bar__section">
-      <h2 class="side-bar__section-caption">
+    <section class="sidebar__section">
+      <h2 class="sidebar__section-caption">
         Guidelines
       </h2>
 
-      <ds-side-bar-link
+      <ds-sidebar-link
         data-test="colors-link"
         :route="{ name: 'DocumentationColors' }"
       >
         Colors
-      </ds-side-bar-link>
+      </ds-sidebar-link>
 
-      <ds-side-bar-link
+      <ds-sidebar-link
         data-test="typography-link"
         :route="{ name: 'DocumentationTypography' }"
       >
         Typography
-      </ds-side-bar-link>
+      </ds-sidebar-link>
 
-      <ds-side-bar-link
-        data-test="side-bars-link"
-        :route="{ name: 'DocumentationSideBars' }"
+      <ds-sidebar-link
+        data-test="sidebars-link"
+        :route="{ name: 'DocumentationSidebars' }"
       >
-        Side Bars
-      </ds-side-bar-link>
+        Sidebars
+      </ds-sidebar-link>
 
-      <ds-side-bar-link
+      <ds-sidebar-link
         data-test="scrollbars-link"
         :route="{ name: 'DocumentationScrollbars' }"
       >
         Scrollbars
-      </ds-side-bar-link>
+      </ds-sidebar-link>
     </section>
 
-    <section class="side-bar__section">
-      <h2 class="side-bar__section-caption">
+    <section class="sidebar__section">
+      <h2 class="sidebar__section-caption">
         Components
       </h2>
 
-      <ds-side-bar-link
+      <ds-sidebar-link
         data-test="buttons-link"
         :route="{ name: 'DocumentationButtons' }"
       >
         Buttons
-      </ds-side-bar-link>
+      </ds-sidebar-link>
 
-      <ds-side-bar-link
+      <ds-sidebar-link
         data-test="flags-link"
         :route="{ name: 'DocumentationFlags' }"
       >
         Flags
-      </ds-side-bar-link>
+      </ds-sidebar-link>
 
-      <ds-side-bar-link
+      <ds-sidebar-link
         data-test="tags-link"
         :route="{ name: 'DocumentationTags' }"
       >
         Tags
-      </ds-side-bar-link>
+      </ds-sidebar-link>
     </section>
-  </ds-side-bar>
+  </ds-sidebar>
 </template>
 
 <script setup>
-import DsSideBar from '@/components/DsSideBar.vue'
-import DsSideBarLink from '@/components/DsSideBarLink.vue'
+import DsSidebar from '@/components/DsSidebar.vue'
+import DsSidebarLink from '@/components/DsSidebarLink.vue'
 </script>
 
 <style lang="scss" scoped>
-.side-bar {
+.sidebar {
   &__title {
     font: var(--font-title-2);
   }

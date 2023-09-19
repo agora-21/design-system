@@ -1,6 +1,6 @@
 <template>
   <div class="documentation-main">
-    <side-bar />
+    <sidebar />
 
     <main class="documentation-main__content">
       <router-view />
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import SideBar from './DocumentationMain/SideBar.vue'
+import Sidebar from './DocumentationMain/Sidebar.vue'
 </script>
 
 <style lang="scss" scoped>

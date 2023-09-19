@@ -1,9 +1,9 @@
 import { mount, RouterLinkStub } from '@vue/test-utils'
-import DsSideBarLink from '@/components/DsSideBarLink.vue'
+import DsSidebarLink from '@/components/DsSidebarLink.vue'
 
-describe('DsSideBarLink', () => {
+describe('DsSidebarLink', () => {
   it('renders router-link', () => {
-    const wrapper = mount(DsSideBarLink, {
+    const wrapper = mount(DsSidebarLink, {
       global: {
         stubs: {
           'router-link': RouterLinkStub
@@ -16,7 +16,7 @@ describe('DsSideBarLink', () => {
   })
 
   it('renders router-link with route', () => {
-    const wrapper = mount(DsSideBarLink, {
+    const wrapper = mount(DsSidebarLink, {
       global: {
         stubs: {
           'router-link': RouterLinkStub
@@ -29,7 +29,7 @@ describe('DsSideBarLink', () => {
   })
 
   it('renders router-link with default slot', () => {
-    const wrapper = mount(DsSideBarLink, {
+    const wrapper = mount(DsSidebarLink, {
       global: {
         stubs: {
           'router-link': RouterLinkStub
