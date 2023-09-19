@@ -5,6 +5,7 @@ import DocumentationMain from '@/views/DocumentationMain.vue'
 import DocumentationButtons from '@/views/Documentation/DocumentationButtons.vue'
 import DocumentationColors from '@/views/Documentation/DocumentationColors.vue'
 import DocumentationFlags from '@/views/Documentation/DocumentationFlags.vue'
+import DocumentationScrollbars from '@/views/Documentation/DocumentationScrollbars.vue'
 import DocumentationTags from '@/views/Documentation/DocumentationTags.vue'
 import DocumentationTypography from '@/views/Documentation/DocumentationTypography.vue'
 
@@ -24,6 +25,10 @@ const routes = [{
     path: 'flags',
     name: 'DocumentationFlags',
     component: DocumentationFlags
+  }, {
+    path: 'scroll-bars',
+    name: 'DocumentationScrollbars',
+    component: DocumentationScrollbars
   }, {
     path: 'tags',
     name: 'DocumentationTags',

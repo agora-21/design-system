@@ -23,19 +23,6 @@ import DsSideBar from '@/components/DsSideBar.vue'
   &__content {
     display: grid;
     overflow-y: auto;
-
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: linear-gradient(0deg, var(--blue-100) 0%, var(--chocolate-100) 50%, var(--green-100) 100%);
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--neutral-110);
-      border-radius: 2px;
-    }
   }
 }
 </style>

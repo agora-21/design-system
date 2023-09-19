@@ -22,6 +22,13 @@
       >
         Typography
       </ds-side-bar-link>
+
+      <ds-side-bar-link
+        data-test="scrollbars-link"
+        :route="{ name: 'DocumentationScrollbars' }"
+      >
+        Scrollbars
+      </ds-side-bar-link>
     </section>
 
     <section class="side-bar__section">
