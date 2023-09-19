@@ -35,7 +35,7 @@
 
   &__example-container {
     box-shadow: var(--shadow-6);
-    display: flex;
+    display: grid;
     margin-top: 56px;
     max-height: 600px;
     max-width: 500px;
@@ -43,8 +43,6 @@
   }
 
   &__example {
-    height: fit-content;
-    object-fit: cover;
     width: 100%;
   }
 }
