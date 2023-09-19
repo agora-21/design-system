@@ -1,70 +1,8 @@
 <template>
   <nav class="side-bar">
-    <h1 class="side-bar__title">
-      Design System
-    </h1>
-
-    <section class="side-bar__section">
-      <h2 class="side-bar__section-caption">
-        Guidelines
-      </h2>
-
-      <ds-side-bar-link
-        data-test="colors-link"
-        :route="{ name: 'DocumentationColors' }"
-      >
-        Colors
-      </ds-side-bar-link>
-
-      <ds-side-bar-link
-        data-test="typography-link"
-        :route="{ name: 'DocumentationTypography' }"
-      >
-        Typography
-      </ds-side-bar-link>
-
-      <ds-side-bar-link
-        data-test="scrollbars-link"
-        :route="{ name: 'DocumentationScrollbars' }"
-      >
-        Scrollbars
-      </ds-side-bar-link>
-    </section>
-
-    <section class="side-bar__section">
-      <h2 class="side-bar__section-caption">
-        Components
-      </h2>
-
-      <ds-side-bar-link
-        data-test="buttons-link"
-        :route="{ name: 'DocumentationButtons' }"
-      >
-        Buttons
-      </ds-side-bar-link>
-
-      <ds-side-bar-link
-        data-test="flags-link"
-        :route="{ name: 'DocumentationFlags' }"
-      >
-        Flags
-      </ds-side-bar-link>
-
-      <ds-side-bar-link
-        data-test="tags-link"
-        :route="{ name: 'DocumentationTags' }"
-      >
-        Tags
-      </ds-side-bar-link>
-    </section>
+    <slot />
   </nav>
 </template>
-
-<script setup>
-import DsSideBarLink from './DsSideBarLink.vue'
-
-// TODO: use slots to render links
-</script>
 
 <style lang="scss" scoped>
 .side-bar {
