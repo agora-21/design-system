@@ -15,6 +15,10 @@ export default [{
   name: 'DocumentationFlags',
   component: async () => import('@/views/Documentation/DocumentationFlags.vue')
 }, {
+  path: 'icons',
+  name: 'DocumentationIcons',
+  component: async () => import('@/views/Documentation/DocumentationIcons.vue')
+}, {
   path: 'loaders',
   name: 'DocumentationLoaders',
   component: async () => import('@/views/Documentation/DocumentationLoaders.vue')

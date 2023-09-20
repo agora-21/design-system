@@ -65,6 +65,13 @@
       </ds-sidebar-link>
 
       <ds-sidebar-link
+        data-test="icons-link"
+        :route="{ name: 'DocumentationIcons' }"
+      >
+        Icons
+      </ds-sidebar-link>
+
+      <ds-sidebar-link
         data-test="loaders-link"
         :route="{ name: 'DocumentationLoaders' }"
       >
