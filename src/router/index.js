@@ -5,6 +5,7 @@ import DocumentationMain from '@/views/DocumentationMain.vue'
 import DocumentationButtons from '@/views/Documentation/DocumentationButtons.vue'
 import DocumentationColors from '@/views/Documentation/DocumentationColors.vue'
 import DocumentationFlags from '@/views/Documentation/DocumentationFlags.vue'
+import DocumentationLoaders from '@/views/Documentation/DocumentationLoaders.vue'
 import DocumentationSidebars from '@/views/Documentation/DocumentationSidebars.vue'
 import DocumentationScrollbars from '@/views/Documentation/DocumentationScrollbars.vue'
 import DocumentationTags from '@/views/Documentation/DocumentationTags.vue'
@@ -26,6 +27,10 @@ const routes = [{
     path: 'flags',
     name: 'DocumentationFlags',
     component: DocumentationFlags
+  }, {
+    path: 'laoders',
+    name: 'DocumentationLoaders',
+    component: DocumentationLoaders
   }, {
     path: 'sidebars',
     name: 'DocumentationSidebars',

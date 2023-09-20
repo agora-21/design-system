@@ -58,6 +58,13 @@
       </ds-sidebar-link>
 
       <ds-sidebar-link
+        data-test="loaders-link"
+        :route="{ name: 'DocumentationLoaders' }"
+      >
+        Loaders
+      </ds-sidebar-link>
+
+      <ds-sidebar-link
         data-test="tags-link"
         :route="{ name: 'DocumentationTags' }"
       >
