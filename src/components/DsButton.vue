@@ -224,16 +224,16 @@ defineProps({
 
   &--neutral {
     &.ds-button--filled {
-      background-color: var(--neutral-100);
+      background-color: var(--neutral-80);
       color: var(--neutral-170);
 
       &:hover {
-        background-color: var(--neutral-80);
+        background-color: var(--neutral-70);
         color: var(--neutral-170);
       }
 
       &:active {
-        background-color: var(--neutral-70);
+        background-color: var(--neutral-60);
         color: var(--neutral-170);
       }
     }
@@ -241,18 +241,18 @@ defineProps({
 
     &.ds-button--outline {
       background-color: transparent;
-      border: 2px solid var(--neutral-100);
-      color: var(--neutral-100);
+      border: 2px solid var(--neutral-80);
+      color: var(--neutral-80);
 
       &:hover {
-        background-color: var(--neutral-80);
-        border-color: var(--neutral-80);
+        background-color: var(--neutral-70);
+        border-color: var(--neutral-70);
         color: var(--neutral-170);
       }
 
       &:active {
-        background-color: var(--neutral-70);
-        border-color: var(--neutral-70);
+        background-color: var(--neutral-60);
+        border-color: var(--neutral-60);
         color: var(--neutral-170);
       }
     }
