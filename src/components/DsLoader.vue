@@ -37,7 +37,7 @@
 
     &--2 {
       animation-delay: -0.7s;
-      background-color: var(--blue-100);
+      background-color: var(--chocolate-100);
     }
 
     &--3 {
@@ -47,7 +47,7 @@
 
     &--4 {
       animation-delay: -0.5s;
-      background-color: var(--chocolate-100);
+      background-color: var(--blue-100);
     }
 
     &--5 {
