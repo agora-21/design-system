@@ -36,123 +36,225 @@ defineProps({
 
 <style lang="scss" scoped>
 .ds-button {
-  --light-text-color: var(--neutral-60);
-  --dark-text-color: var(--neutral-170);
-
   border: none;
   border-radius: var(--border-radius-3);
-  color: var(--text-color);
   cursor: pointer;
-  text-transform: uppercase;
-  padding: 18px 32px;
+  font: var(--font-body);
+  padding: 14px 30px;
+  transition: all 150ms ease-in-out;
 
   // Colors
   &--plum {
-    --background-color: var(--plum-100);
-    --text-color: var(--dark-text-color);
+    &.ds-button--filled {
+      background-color: var(--plum-100);
+      color: var(--neutral-170);
 
-    &:hover {
-      --text-color: var(--dark-text-color);
+      &:hover {
+        background-color: var(--plum-80);
+      }
+
+      &:active {
+        background-color: var(--plum-70);
+      }
     }
 
-    &:active {
-      --text-color: var(--dark-text-color);
+
+    &.ds-button--outline {
+      background-color: transparent;
+      border: 2px solid var(--plum-100);
+      color: var(--plum-100);
+
+      &:hover {
+        background-color: var(--plum-80);
+        border-color: var(--plum-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--plum-70);
+        border-color: var(--plum-70);
+        color: var(--neutral-170);
+      }
     }
   }
 
   &--indigo {
-    --background-color: var(--indigo-100);
-    --text-color: var(--light-text-color);
+    &.ds-button--filled {
+      background-color: var(--indigo-100);
+      color: var(--neutral-60);
 
-    &:hover {
-      --text-color: var(--light-text-color);
+      &:hover {
+        background-color: var(--indigo-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--indigo-70);
+        color: var(--neutral-170);
+      }
     }
 
-    &:active {
-      --text-color: var(--light-text-color);
+
+    &.ds-button--outline {
+      background-color: transparent;
+      border: 2px solid var(--indigo-100);
+      color: var(--indigo-100);
+
+      &:hover {
+        background-color: var(--indigo-80);
+        border-color: var(--indigo-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--indigo-70);
+        border-color: var(--indigo-70);
+        color: var(--neutral-170);
+      }
     }
   }
 
   &--blue {
-    --background-color: var(--blue-100);
-    --text-color: var(--dark-text-color);
+    &.ds-button--filled {
+      background-color: var(--blue-100);
+      color: var(--neutral-170);
 
-    &:hover {
-      --text-color: var(--dark-text-color);
+      &:hover {
+        background-color: var(--blue-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--blue-70);
+        color: var(--neutral-170);
+      }
     }
 
-    &:active {
-      --text-color: var(--dark-text-color);
+
+    &.ds-button--outline {
+      background-color: transparent;
+      border: 2px solid var(--blue-100);
+      color: var(--blue-100);
+
+      &:hover {
+        background-color: var(--blue-80);
+        border-color: var(--blue-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--blue-70);
+        border-color: var(--blue-70);
+        color: var(--neutral-170);
+      }
     }
   }
 
   &--chocolate {
-    --background-color: var(--chocolate-100);
-    --text-color: var(--dark-text-color);
+    &.ds-button--filled {
+      background-color: var(--chocolate-100);
+      color: var(--neutral-170);
 
-    &:hover {
-      --text-color: var(--dark-text-color);
+      &:hover {
+        background-color: var(--chocolate-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--chocolate-70);
+        color: var(--neutral-170);
+      }
     }
 
-    &:active {
-      --text-color: var(--dark-text-color);
+
+    &.ds-button--outline {
+      background-color: transparent;
+      border: 2px solid var(--chocolate-100);
+      color: var(--chocolate-100);
+
+      &:hover {
+        background-color: var(--chocolate-80);
+        border-color: var(--chocolate-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--chocolate-70);
+        border-color: var(--chocolate-70);
+        color: var(--neutral-170);
+      }
     }
   }
 
   &--green {
-    --background-color: var(--green-100);
-    --text-color: var(--dark-text-color);
+    &.ds-button--filled {
+      background-color: var(--green-100);
+      color: var(--neutral-170);
 
-    &:hover {
-      --text-color: var(--dark-text-color);
+      &:hover {
+        background-color: var(--green-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--green-70);
+        color: var(--neutral-170);
+      }
     }
 
-    &:active {
-      --text-color: var(--dark-text-color);
+
+    &.ds-button--outline {
+      background-color: transparent;
+      border: 2px solid var(--green-100);
+      color: var(--green-100);
+
+      &:hover {
+        background-color: var(--green-80);
+        border-color: var(--green-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--green-70);
+        border-color: var(--green-70);
+        color: var(--neutral-170);
+      }
     }
   }
 
   &--neutral {
-    --background-color: var(--neutral-100);
-    --text-color: var(--dark-text-color);
+    &.ds-button--filled {
+      background-color: var(--neutral-100);
+      color: var(--neutral-170);
 
-    &:hover {
-      --text-color: var(--dark-text-color);
-    }
+      &:hover {
+        background-color: var(--neutral-80);
+        color: var(--neutral-170);
+      }
 
-    &:active {
-      --text-color: var(--dark-text-color);
-    }
-  }
-
-  // Variants
-  &--filled {
-    background-color: transparent;
-    box-shadow: 0 0 50px 50px var(--background-color) inset;
-    transition: all 50ms ease-in-out;
-
-    &:hover {
-      box-shadow: 0 0 10px 0 var(--background-color) inset, 0 0 10px 4px var(--background-color);
-
-      &:not(:active) {
-        --text-color: var(--light-text-color);
+      &:active {
+        background-color: var(--neutral-70);
+        color: var(--neutral-170);
       }
     }
 
-    &:active {
-      background-color: var(--background-color);
-    }
-  }
 
-  &--outline {
-    background-color: transparent;
-    border: 2px solid var(--background-color);
-    box-shadow: none;
-    --text-color: var(--light-text-color);
-    transition: all 100ms ease-in-out;
+    &.ds-button--outline {
+      background-color: transparent;
+      border: 2px solid var(--neutral-100);
+      color: var(--neutral-100);
 
-    &:hover {
-      box-shadow: 0 0 50px 50px var(--background-color) inset;
+      &:hover {
+        background-color: var(--neutral-80);
+        border-color: var(--neutral-80);
+        color: var(--neutral-170);
+      }
+
+      &:active {
+        background-color: var(--neutral-70);
+        border-color: var(--neutral-70);
+        color: var(--neutral-170);
+      }
     }
   }
 }
