@@ -30,6 +30,16 @@
 
     <section>
       <h3 class="documentation-loaders__subject">
+        On a chocolate/indigo background
+      </h3>
+
+      <div class="documentation-loaders__loader-container documentation-loaders__loader-container--chocolate-plum">
+        <ds-loader />
+      </div>
+    </section>
+
+    <section>
+      <h3 class="documentation-loaders__subject">
         On a neutral background
       </h3>
 
@@ -82,6 +92,10 @@ import DsLoader from '@/components/DsLoader.vue'
 
     &--blue-green {
       background: linear-gradient(50deg, var(--blue-160) 0%, var(--green-160) 100%);
+    }
+
+    &--chocolate-plum {
+      background: linear-gradient(50deg, var(--chocolate-160) 0%, var(--plum-160) 100%);
     }
   }
 }
