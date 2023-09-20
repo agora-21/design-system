@@ -1,42 +1,33 @@
-import DocumentationButtons from '@/views/Documentation/DocumentationButtons.vue'
-import DocumentationColors from '@/views/Documentation/DocumentationColors.vue'
-import DocumentationFlags from '@/views/Documentation/DocumentationFlags.vue'
-import DocumentationLoaders from '@/views/Documentation/DocumentationLoaders.vue'
-import DocumentationSidebars from '@/views/Documentation/DocumentationSidebars.vue'
-import DocumentationScrollbars from '@/views/Documentation/DocumentationScrollbars.vue'
-import DocumentationTags from '@/views/Documentation/DocumentationTags.vue'
-import DocumentationTypography from '@/views/Documentation/DocumentationTypography.vue'
-
 export default [{
-  path: 'colors',
-  name: 'DocumentationColors',
-  component: DocumentationColors
-}, {
   path: 'buttons',
   name: 'DocumentationButtons',
-  component: DocumentationButtons
+  component: async () => import('@/views/Documentation/DocumentationButtons.vue')
+}, {
+  path: 'colors',
+  name: 'DocumentationColors',
+  component: async () => import('@/views/Documentation/DocumentationColors.vue')
 }, {
   path: 'flags',
   name: 'DocumentationFlags',
-  component: DocumentationFlags
+  component: async () => import('@/views/Documentation/DocumentationFlags.vue')
 }, {
   path: 'loaders',
   name: 'DocumentationLoaders',
-  component: DocumentationLoaders
+  component: async () => import('@/views/Documentation/DocumentationLoaders.vue')
 }, {
   path: 'sidebars',
   name: 'DocumentationSidebars',
-  component: DocumentationSidebars
+  component: async () => import('@/views/Documentation/DocumentationSidebars.vue')
 }, {
   path: 'scrollbars',
   name: 'DocumentationScrollbars',
-  component: DocumentationScrollbars
+  component: async () => import('@/views/Documentation/DocumentationScrollbars.vue')
 }, {
   path: 'tags',
   name: 'DocumentationTags',
-  component: DocumentationTags
+  component: async () => import('@/views/Documentation/DocumentationTags.vue')
 }, {
   path: 'typography',
   name: 'DocumentationTypography',
-  component: DocumentationTypography
+  component: async () => import('@/views/Documentation/DocumentationTypography.vue')
 }]
