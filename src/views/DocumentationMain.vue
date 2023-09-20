@@ -3,7 +3,11 @@
     <sidebar />
 
     <main class="documentation-main__content">
-      <router-view />
+      <router-view v-slot="{ Component }">
+        <transition appear mode="out-in" name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
   </div>
 </template>
@@ -24,5 +28,15 @@ import Sidebar from './DocumentationMain/Sidebar.vue'
     display: grid;
     overflow-y: auto;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
