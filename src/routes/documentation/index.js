@@ -3,6 +3,10 @@ export default [{
   name: 'DocumentationButtons',
   component: async () => import('@/views/Documentation/DocumentationButtons.vue')
 }, {
+  path: 'card-layouts',
+  name: 'DocumentationCardLayouts',
+  component: async () => import('@/views/Documentation/DocumentationCardLayouts.vue')
+}, {
   path: 'colors',
   name: 'DocumentationColors',
   component: async () => import('@/views/Documentation/DocumentationColors.vue')

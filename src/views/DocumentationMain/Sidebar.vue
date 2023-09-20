@@ -10,6 +10,13 @@
       </h2>
 
       <ds-sidebar-link
+        data-test="card-layouts-link"
+        :route="{ name: 'DocumentationCardLayouts' }"
+      >
+        Card Layouts
+      </ds-sidebar-link>
+
+      <ds-sidebar-link
         data-test="colors-link"
         :route="{ name: 'DocumentationColors' }"
       >

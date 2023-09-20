@@ -10,6 +10,6 @@
   border-right: 1px solid var(--neutral-140);
   color: var(--neutral-60);
   height: 100%;
-  padding: var(--padding-2-horizontal);
+  padding: 16px 20px;
 }
 </style>

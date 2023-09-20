@@ -23,7 +23,7 @@ defineProps({
   background-color: transparent;
   border-radius: var(--border-radius-2);
   font: var(--font-body);
-  padding: var(--padding-1-horizontal);
+  padding: 10px 16px;
   text-decoration: none;
   transition: background-color 50ms ease-in-out;
   width: 100%;

@@ -62,7 +62,7 @@ defineProps({
   border-radius: var(--border-radius-2);
   box-shadow: var(--shadow-1);
   display: grid;
-  padding: var(--padding-2-horizontal);
+  padding: 16px 20px;
 
   &__title {
     font: var(--font-title-4);
