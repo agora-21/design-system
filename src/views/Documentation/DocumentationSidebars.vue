@@ -1,15 +1,15 @@
 <template>
   <article class="documentation-sidebar">
     <h2 class="documentation-sidebar__title">
-      Scroll Bars
+      Sidebars
     </h2>
 
     <p class="documentation-sidebar__description">
-      This scroll bar can be used in any desktop page.
+      This sidebar can be used in any desktop page.
     </p>
 
     <p class="documentation-sidebar__description">
-      The scrollbar should be fixed, have a 320px width and fill the visible body from top to bottom.
+      The sidebar should be fixed, have a 320px width and fill the visible body from top to bottom.
     </p>
 
     <p class="documentation-sidebar__description">
@@ -23,7 +23,7 @@
     <div class="documentation-sidebar__example-container">
       <ds-sidebar>
         <h3 class="documentation-sidebar__example-title">
-          Example Side Bar
+          Example Sidebar
         </h3>
 
         <section class="documentation-sidebar__example-section">

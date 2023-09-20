@@ -1,7 +1,7 @@
 <template>
   <article class="documentation-scrollbar">
     <h2 class="documentation-scrollbar__title">
-      Scroll Bars
+      Scrollbars
     </h2>
 
     <p class="documentation-scrollbar__description">
