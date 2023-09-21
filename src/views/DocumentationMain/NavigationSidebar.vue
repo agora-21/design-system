@@ -1,11 +1,11 @@
 <template>
   <ds-sidebar>
-    <h1 class="sidebar__title">
+    <h1 class="navigation-sidebar__title">
       Design System
     </h1>
 
-    <section class="sidebar__section">
-      <h2 class="sidebar__section-caption">
+    <section class="navigation-sidebar__section">
+      <h2 class="navigation-sidebar__section-caption">
         Guidelines
       </h2>
 
@@ -31,7 +31,7 @@
       </ds-sidebar-link>
 
       <ds-sidebar-link
-        data-test="sidebars-link"
+        data-test="navigation-sidebars-link"
         :route="{ name: 'DocumentationSidebars' }"
       >
         Sidebars
@@ -45,8 +45,8 @@
       </ds-sidebar-link>
     </section>
 
-    <section class="sidebar__section">
-      <h2 class="sidebar__section-caption">
+    <section class="navigation-sidebar__section">
+      <h2 class="navigation-sidebar__section-caption">
         Components
       </h2>
 
@@ -101,7 +101,7 @@ import DsSidebarLink from '@/components/DsSidebarLink.vue'
 </script>
 
 <style lang="scss" scoped>
-.sidebar {
+.navigation-sidebar {
   &__title {
     font: var(--font-title-2);
   }
