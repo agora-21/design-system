@@ -98,6 +98,13 @@
       >
         Tags
       </ds-sidebar-link>
+
+      <ds-sidebar-link
+        data-test="timelines-link"
+        :route="{ name: 'DocumentationTimelines' }"
+      >
+        Timelines
+      </ds-sidebar-link>
     </section>
   </ds-sidebar>
 </template>

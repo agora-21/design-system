@@ -46,4 +46,8 @@ export default [{
   path: 'typography',
   name: 'DocumentationTypography',
   component: async () => import('@/views/Documentation/DocumentationTypography.vue')
+}, {
+  path: 'timelines',
+  name: 'DocumentationTimelines',
+  component: async () => import('@/views/Documentation/DocumentationTimelines.vue')
 }]

@@ -68,13 +68,13 @@ const checked = computed(() => props.modelValue === props.value)
   width: 1.2rem;
 
   &::before {
-    content: "";
-    width: 0.7rem;
-    height: 0.7rem;
     border-radius: 50%;
+    box-shadow: inset 1rem 1rem var(--border-color);
+    content: "";
+    height: 0.7rem;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1rem 1rem var(--border-color);
+    width: 0.7rem;
   }
 
   &:checked::before {
