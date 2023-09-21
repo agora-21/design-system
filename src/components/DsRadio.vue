@@ -1,10 +1,10 @@
 <template>
   <div class="ds-radio__container">
     <input
-      :value="modelValue"
+      :value="value"
       :id="id"
       class="ds-radio"
-      data-test="input"
+      data-test="radio"
       type="radio"
       :checked="checked"
       @input="$emit('update:modelValue', value)"
