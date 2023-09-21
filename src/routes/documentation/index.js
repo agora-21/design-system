@@ -35,6 +35,10 @@ export default [{
   name: 'DocumentationScrollbars',
   component: async () => import('@/views/Documentation/DocumentationScrollbars.vue')
 }, {
+  path: 'radios',
+  name: 'DocumentationRadios',
+  component: async () => import('@/views/Documentation/DocumentationRadios.vue')
+}, {
   path: 'tags',
   name: 'DocumentationTags',
   component: async () => import('@/views/Documentation/DocumentationTags.vue')

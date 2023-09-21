@@ -4,6 +4,10 @@
       Icons
     </h2>
 
+    <p class="documentation-icons__description">
+      Vue Unicons by <a href="https://iconscout.com/">IconScout</a>
+    </p>
+
     <section>
       <h3 class="documentation-icons__subject">
         When to use

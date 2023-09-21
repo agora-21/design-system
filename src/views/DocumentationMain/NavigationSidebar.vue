@@ -86,6 +86,13 @@
       </ds-sidebar-link>
 
       <ds-sidebar-link
+        data-test="radios-link"
+        :route="{ name: 'DocumentationRadios' }"
+      >
+        Radios
+      </ds-sidebar-link>
+
+      <ds-sidebar-link
         data-test="tags-link"
         :route="{ name: 'DocumentationTags' }"
       >
