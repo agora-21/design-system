@@ -14,7 +14,7 @@
       </h3>
 
       <p class="documentation-card-layouts__description">
-        To communicate an isolated block of information. Can be used individually or grouped with others in a grid layout.
+        To communicate an isolated block of information that has emphasis in relation to the page. Can be used individually or grouped with others in a grid layout.
       </p>
     </section>
 
