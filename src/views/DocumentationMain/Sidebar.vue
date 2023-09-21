@@ -72,6 +72,13 @@
       </ds-sidebar-link>
 
       <ds-sidebar-link
+        data-test="inputs-link"
+        :route="{ name: 'DocumentationInputs' }"
+      >
+        Inputs
+      </ds-sidebar-link>
+
+      <ds-sidebar-link
         data-test="loaders-link"
         :route="{ name: 'DocumentationLoaders' }"
       >
