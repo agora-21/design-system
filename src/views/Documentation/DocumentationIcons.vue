@@ -133,5 +133,10 @@ const searchedIconNames = computed(
       box-shadow: var(--shadow-2);
     }
   }
+
+  &__icon-name {
+    color: var(--neutral-80);
+    font: var(--font-caption);
+  }
 }
 </style>
