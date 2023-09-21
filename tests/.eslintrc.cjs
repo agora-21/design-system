@@ -1,4 +1,8 @@
 /* eslint-env node */
 module.exports = {
-  globals: ['describe', 'it']
+  globals: {
+    describe: true,
+    it: true,
+    expect: true
+  }
 }
