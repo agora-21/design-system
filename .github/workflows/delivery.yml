@@ -55,8 +55,8 @@ jobs:
       - name: Find tag without 'v'
         id: tag_without_v
         run: |
-          full_tag = "${{ needs.bump-and-release.outputs.newTag }}"
-          tag = "${full_tag#v}"
+          full_tag="${{ needs.bump-and-release.outputs.newTag }}"
+          tag="${full_tag#v}"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
 
       - run: npm publish
