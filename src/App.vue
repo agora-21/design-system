@@ -7,7 +7,7 @@
 <style lang="scss" scoped>
 .app {
   background-color: var(--neutral-150);
-  height: 100%;
+  height: 100lvh;
   width: 100%;
 }
 </style>

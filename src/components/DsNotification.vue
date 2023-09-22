@@ -65,7 +65,7 @@ onMounted(async () => {
     bottom: 20px;
     display: grid;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
   }
 
