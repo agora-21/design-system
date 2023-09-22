@@ -56,7 +56,7 @@ jobs:
         id: tag_without_v
         run: |
           full_tag = ${{ needs.bump-and-release.outputs.newTag#v }}
-          tag = full_tag#v
+          tag = ${full_tag#v}
           echo "tag=${tag}" >> $GITHUB_OUTPUT
 
       - run: npm publish
