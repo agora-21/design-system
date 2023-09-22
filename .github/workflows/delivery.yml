@@ -1,0 +1,55 @@
+name: Delivery
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bump-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout commit
+        uses: actions/checkout@v4
+
+      - name: Bump version
+        uses: phips28/gh-action-bump-version@master
+        id: bump-version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag-prefix: v
+          target-branch: main
+
+      - name: Create release
+        uses: marvinpinto/action-automatic-releases@master
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          title: Design System Release
+          automatic_release_tag: ${{ steps.bump-version.outputs.newTag }}
+
+  publish-package:
+    needs: bump-and-release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout commit
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: package-lock.json
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@iha-tech'
+
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
