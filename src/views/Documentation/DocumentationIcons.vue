@@ -50,15 +50,21 @@
           :key="name"
           :title="name"
           class="documentation-icons__icon"
+          @click="onClickIcon(name)"
         >
           <ds-icon :name="name" />
 
-          <p class="documentation-icons__icon-name">
+          <h4 class="documentation-icons__icon-name">
             {{ name }}
-          </p>
+          </h4>
         </div>
       </div>
     </section>
+
+    <ds-notification
+      v-if="showCopiedToClipboardNotification"
+      label="Icon copied to clipboard."
+    />
   </article>
 </template>
 
@@ -69,14 +75,27 @@ import iconNames from '@/constants/icons'
 
 import DsIcon from '@/components/DsIcon.vue'
 import DsInput from '@/components/DsInput.vue'
+import DsNotification from '@/components/DsNotification.vue'
+
+const NOTIFICATION_TIME_IN_MILISECONDS = 4000
 
 const search = ref('')
+const showCopiedToClipboardNotification = ref(false)
 
 const searchedIconNames = computed(
   () => iconNames.filter(
     (name) => name.includes(search.value)
   )
 )
+
+const onClickIcon = async (icon) => {
+  showCopiedToClipboardNotification.value = true
+
+  navigator.clipboard.writeText(icon)
+  await new Promise((resolve) => setTimeout(resolve, NOTIFICATION_TIME_IN_MILISECONDS))
+
+  showCopiedToClipboardNotification.value = false
+}
 </script>
 
 <style lang="scss" scoped>
@@ -121,6 +140,7 @@ const searchedIconNames = computed(
   &__icon {
     align-items: center;
     border-radius: 8px;
+    cursor: pointer;
     color: var(--neutral-60);
     display: flex;
     flex-direction: column;
@@ -131,6 +151,10 @@ const searchedIconNames = computed(
     &:hover {
       background: linear-gradient(50deg, var(--plum-140) 0%, var(--indigo-140) 100%);
       box-shadow: var(--shadow-2);
+    }
+
+    &:active {
+      background: linear-gradient(50deg, var(--plum-120) 0%, var(--indigo-120) 100%);
     }
   }
 
