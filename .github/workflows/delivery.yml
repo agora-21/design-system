@@ -40,8 +40,6 @@ jobs:
       contents: read
       packages: write
     steps:
-      - run: echo "${{ needs.bump-and-release.outputs.newTag }}"
-
       - name: Checkout commit
         uses: actions/checkout@v4
         with:
@@ -54,8 +52,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@iha-tech'
 
-      - run: npm install
-
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ needs.bump-and-release.outputs.newTag#v }}
