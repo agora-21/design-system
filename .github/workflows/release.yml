@@ -2,28 +2,22 @@ name: Release
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - v*
 
 jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: phips28/gh-action-bump-version@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag-prefix: v
-          target-branch: main
-      - name: Test
-        run: echo "tag=${GITHUB_REF#refs/*/}"
+      - name: Get latest tag
+        id: latest_tag
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
+
       - uses: marvinpinto/action-automatic-releases@master
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           title: Design System Release
-          automatic_release_tag: latest
-
+          automatic_release_tag: ${{ steps.latest_tag.outputs.tag }}

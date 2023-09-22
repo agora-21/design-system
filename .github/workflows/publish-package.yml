@@ -15,12 +15,15 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
           cache-dependency-path: package-lock.json
+
       - run: npm install
+
       - run: npm run build
 
   publish:
@@ -28,6 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -35,6 +39,7 @@ jobs:
           cache-dependency-path: package-lock.json
           registry-url: 'https://npm.pkg.github.com'
           scope: '@iha-tech'
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
