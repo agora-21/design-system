@@ -5,7 +5,7 @@ name: Design System Package
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
