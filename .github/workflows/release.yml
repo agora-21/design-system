@@ -1,4 +1,4 @@
-name: Design System Release
+name: Release
 
 on:
   push:
@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: phips28/gh-action-bump-version@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
