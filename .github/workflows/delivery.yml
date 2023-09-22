@@ -52,15 +52,6 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@iha-tech'
 
-      - name: Find tag without 'v'
-        id: tag_without_v
-        run: |
-          full_tag="${{ needs.bump-and-release.outputs.newTag }}"
-          tag="${full_tag#v}"
-          echo "tag=$tag" >> "$GITHUB_OUTPUT"
-
-      - run: echo "${{ steps.tag_without_v.outputs.tag }}"
-
-      - run: npm publish --tag ${{ steps.tag_without_v.outputs.tag }}
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
