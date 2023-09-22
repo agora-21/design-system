@@ -38,12 +38,12 @@ jobs:
       contents: read
       packages: write
     steps:
+      - run: echo "${{ steps.bump-version.outputs.newTag }}"
+
       - name: Checkout commit
         uses: actions/checkout@v4
         with:
-          ref: refs/tags/${{ steps.bump-version.outputs.newTag }}
-
-      - run: echo "${{ steps.bump-version.outputs.newTag }}"
+          ref: ${{ steps.bump-version.outputs.newTag }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
