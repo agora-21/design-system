@@ -41,7 +41,9 @@ jobs:
       - name: Checkout commit
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.bump-version.outputs.newTag }}
+          ref: refs/tags/${{ steps.bump-version.outputs.newTag }}
+
+      - run: echo "${{ steps.bump-version.outputs.newTag }}"
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
