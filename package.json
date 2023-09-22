@@ -1,7 +1,7 @@
 {
   "name": "@iha-tech/design-system",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "files": ["dist"],
   "main": "./dist/design-system.cjs",
   "module": "./dist/design-system.js",
