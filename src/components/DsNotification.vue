@@ -1,7 +1,11 @@
 <template>
   <teleport to="body">
     <div class="ds-notification__container">
-      <div class="ds-notification">
+      <div
+        :class="{ 'ds-notification--hidden': hidden }"
+        class="ds-notification"
+        data-test="notification"
+      >
         <span class="ds-notification__label">
           {{ label }}
         </span>
@@ -11,11 +15,23 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue'
+
 defineProps({
   label: {
     type: String,
     required: true
   }
+})
+
+const VISIBLE_DURATION_IN_MILISECONDS = 2500
+
+const hidden = ref(false)
+
+onMounted(async () => {
+  await new Promise((resolve) => setTimeout(resolve, VISIBLE_DURATION_IN_MILISECONDS))
+
+  hidden.value = true
 })
 </script>
 
@@ -29,15 +45,6 @@ defineProps({
   }
 }
 
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
 .ds-notification {
   align-items: center;
   background-color: var(--blue-120);
@@ -45,12 +52,16 @@ defineProps({
   box-shadow: var(--shadow-2);
   display: grid;
   height: 40px;
+  opacity: 1;
   padding: 0 16px;
+  transition: opacity 0.5s ease-in-out;
+
+  &--hidden {
+    opacity: 0;
+  }
 
   &__container {
-    animation:
-      slide-in 0.5s ease-in-out,
-      fade-out 0.5s ease-in-out 3.5s;
+    animation: slide-in 0.5s ease-in-out;
     bottom: 20px;
     display: grid;
     justify-content: center;
