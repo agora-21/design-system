@@ -42,27 +42,27 @@
 import DsTimeline from '@/components/DsTimeline.vue'
 
 const ITEMS = [{
-  name: 'javascript',
+  id: 'javascript',
   title: 'Javascript',
   content: 'Javascript is awesome!'
 }, {
-  name: 'ruby-on-rails',
+  id: 'ruby-on-rails',
   title: 'Ruby on Rails',
   content: 'Ruby on Rails is awesome!'
 }, {
-  name: 'github',
+  id: 'github',
   title: 'Github',
   content: 'Github is awesome!'
 }, {
-  name: 'github',
+  id: 'github',
   title: 'Github',
   content: 'Github is awesome!'
 }, {
-  name: 'github',
+  id: 'github',
   title: 'Github',
   content: 'Github is awesome!'
 }, {
-  name: 'github',
+  id: 'github',
   title: 'Github',
   content: 'Github is awesome!'
 }]

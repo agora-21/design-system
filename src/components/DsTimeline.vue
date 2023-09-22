@@ -2,11 +2,11 @@
   <div class="ds-timeline">
     <template
       v-for="item in items"
-      :key="item.name"
+      :key="item.id"
     >
       <div class="ds-timeline__title-container">
         <p class="ds-timeline__title">
-          {{ item.name }}
+          {{ item.title }}
         </p>
       </div>
 
@@ -14,7 +14,7 @@
 
       <div class="ds-timeline__content-container">
         <slot
-          :name="item.name"
+          :name="item.id"
           :content="item.content"
         />
       </div>
@@ -56,22 +56,16 @@ defineProps({
   }
 
   &__marker {
-    --marker-color: var(--plum-100);
-
     background-color: transparent;
-    border: 2px solid var(--marker-color);
+    border: 2px solid var(--plum-100);
     border-radius: 50%;
     display: grid;
     height: 2rem;
     place-content: center;
     width: 2rem;
 
-    &:nth-child(8n + 6) {
-      --marker-color: var(--indigo-100);
-    }
-
     &:before {
-      background-color: var(--marker-color);
+      background-color: var(--plum-100);
       border-radius: 50%;
       content: "";
       height: 1rem;
@@ -80,18 +74,10 @@ defineProps({
   }
 
   &__connector {
-    width: 2px;
-
+    background-color: var(--plum-100);
     grid-row: span 2;
     justify-self: center;
-
-    &:nth-child(8n + 4) {
-      background: linear-gradient(180deg, var(--plum-100) 0%, var(--indigo-100) 100%);
-    }
-
-    &:nth-child(8n) {
-      background: linear-gradient(180deg, var(--indigo-100) 0%, var(--plum-100) 100%);
-    }
+    width: 2px;
 
     &:last-of-type {
       display: none;
