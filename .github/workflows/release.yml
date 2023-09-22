@@ -18,7 +18,7 @@ jobs:
         with:
           tag-prefix: v
           target-branch: main
-      - uses: marvinpinto/action-automatic-releases
+      - uses: marvinpinto/action-automatic-releases@master
         with:
           automatic_release_tag: latest
           repo_token: ${{ secrets.GITHUB_TOKEN }}
