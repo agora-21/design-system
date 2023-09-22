@@ -61,7 +61,6 @@ jobs:
 
       - run: echo "${{ steps.tag_without_v.outputs.tag }}"
 
-      - run: npm publish
+      - run: npm publish --tag ${{ steps.tag_without_v.outputs.tag }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.tag_without_v.outputs.tag }}
