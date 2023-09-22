@@ -40,7 +40,7 @@ jobs:
       contents: read
       packages: write
     steps:
-      - run: echo "${{ steps.bump-version.outputs.newTag }}"
+      - run: echo "${{ needs.bump-and-release.outputs.newTag }}"
 
       - name: Checkout commit
         uses: actions/checkout@v4
