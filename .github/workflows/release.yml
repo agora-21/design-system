@@ -18,9 +18,12 @@ jobs:
         with:
           tag-prefix: v
           target-branch: main
+      - name: Test
+        run: echo "tag=${GITHUB_REF#refs/*/}"
       - uses: marvinpinto/action-automatic-releases@master
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           title: Design System Release
+          automatic_release_tag: latest
 
