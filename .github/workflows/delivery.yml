@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      newTag: ${{ steps.bump-version.outputs.newTag }}
     steps:
       - name: Checkout commit
         uses: actions/checkout@v4
@@ -43,7 +45,7 @@ jobs:
       - name: Checkout commit
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.bump-version.outputs.newTag }}
+          ref: ${{ needs.bump-and-release.outputs.newTag }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
