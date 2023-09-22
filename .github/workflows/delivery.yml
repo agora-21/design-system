@@ -59,6 +59,8 @@ jobs:
           tag="${full_tag#v}"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
 
+      - run: echo "${{ steps.tag_without_v.outputs.tag }}"
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
