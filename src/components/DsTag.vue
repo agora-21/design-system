@@ -50,7 +50,7 @@ defineProps({
 
   &--blue {
     --color: var(--blue-100);
-    --text-color: var(--neutral-60);
+    --text-color: var(--neutral-160);
   }
 
   &--chocolate {
