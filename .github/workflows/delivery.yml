@@ -33,18 +33,6 @@ jobs:
           title: Design System Release
           automatic_release_tag: ${{ steps.bump-version.outputs.newTag }}
 
-  publish-package:
-    needs: bump-and-release
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - name: Checkout commit
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ needs.bump-and-release.outputs.newTag }}
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
