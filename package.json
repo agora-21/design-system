@@ -1,5 +1,5 @@
 {
-  "name": "@iha-tech/design-system",
+  "name": "@agora-21/design-system",
   "version": "1.1.0",
   "private": false,
   "files": [
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iha-tech/design-system.git"
+    "url": "https://github.com/agora-21/design-system.git"
   },
   "scripts": {
     "dev": "vite",
