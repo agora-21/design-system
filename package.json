@@ -13,8 +13,8 @@
       "import": "./dist/design-system.js",
       "require": "./dist/design-system.umd.cjs"
     },
-    "./style": "./dist/style.css",
-    "./main-style": "./dist/styles/main.scss",
+    "./components": "./dist/style.css",
+    "./lib": "./dist/styles/lib.scss",
     "./fonts/*": "./dist/fonts/*"
   },
   "repository": {
