@@ -12,7 +12,10 @@
     ".": {
       "import": "./dist/design-system.js",
       "require": "./dist/design-system.umd.cjs"
-    }
+    },
+    "./style": "./dist/style.css",
+    "./main-style": "./dist/styles/main.scss",
+    "./fonts/*": "./dist/fonts/*"
   },
   "repository": {
     "type": "git",
