@@ -41,4 +41,24 @@ describe('DsTimeline', () => {
     expect(wrapper.find('[data-test="button-javascript"]').text()).toEqual('Learn more about Javascript')
     expect(wrapper.find('[data-test="button-elixir"]').text()).toEqual('Learn more about Elixir')
   })
+
+  describe('when slots are not given', () => {
+    it('renders item.content', () => {
+      const wrapper = mount(DsTimeline, {
+        props: {
+          items: [{
+            id: 'javascript',
+            title: 'Javascript',
+            content: 'Content to render about Javascript'
+          }, {
+            id: 'elixir',
+            title: 'Elixir',
+            content: 'Content to render about Elixir'
+          }]
+        }
+      })
+      expect(wrapper.text()).toContain('Content to render about Javascript')
+      expect(wrapper.text()).toContain('Content to render about Elixir')
+    })
+  })
 })

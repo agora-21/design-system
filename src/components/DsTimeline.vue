@@ -16,7 +16,11 @@
         <slot
           :name="item.id"
           :content="item.content"
-        />
+        >
+          <p class="ds-timeline__content-text">
+            {{ item.content }}
+          </p>
+        </slot>
       </div>
 
       <div class="ds-timeline__connector" />
@@ -48,6 +52,10 @@ defineProps({
     color: var(--neutral-60);
     padding: 0.3rem 16px;
     grid-row: span 3;
+  }
+
+  &__content-text {
+    font: var(--font-body);
   }
 
   &__title {
