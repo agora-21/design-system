@@ -30,7 +30,16 @@
           </template>
 
           <template #github="{ content }">
-            {{ content }}
+            <div class="timeline__content">
+              {{ content }}
+
+              <ds-button
+                color="blue"
+                variant="outline"
+              >
+                Upvote
+              </ds-button>
+            </div>
           </template>
         </ds-timeline>
       </div>
@@ -40,6 +49,7 @@
 
 <script setup>
 import DsTimeline from '@/components/DsTimeline.vue'
+import DsButton from '@/components/DsButton.vue'
 
 const ITEMS = [{
   id: 'javascript',
@@ -54,17 +64,17 @@ const ITEMS = [{
   title: 'Github',
   content: 'Github is awesome!'
 }, {
-  id: 'github',
-  title: 'Github',
-  content: 'Github is awesome!'
+  id: 'gitlab',
+  title: 'Gitlab',
+  content: 'Gitlab is awesome!'
 }, {
-  id: 'github',
-  title: 'Github',
-  content: 'Github is awesome!'
+  id: 'uber',
+  title: 'Uber',
+  content: 'Uber is awesome!'
 }, {
-  id: 'github',
-  title: 'Github',
-  content: 'Github is awesome!'
+  id: 'airbnb',
+  title: 'Airbnb',
+  content: 'Airbnb is awesome!'
 }]
 </script>
 
@@ -96,6 +106,15 @@ const ITEMS = [{
 
   &__example {
     margin-top: 32px;
+  }
+}
+
+.timeline {
+  &__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
 </style>

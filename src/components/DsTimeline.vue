@@ -39,19 +39,21 @@ defineProps({
 
 <style lang="scss" scoped>
 .ds-timeline {
+  $marker-size: 2rem;
+
   display: grid;
-  grid-auto-rows: auto minmax(auto, 60px) minmax(auto, 60px);
+  grid-auto-rows: $marker-size minmax(40px, auto);
   grid-template-columns: auto auto 1fr;
 
   &__title-container {
     padding: 0.3rem 16px;
-    grid-row: span 3;
+    grid-row: span 2;
   }
 
   &__content-container {
     color: var(--neutral-60);
     padding: 0.3rem 16px;
-    grid-row: span 3;
+    grid-row: span 2;
   }
 
   &__content-text {
@@ -68,9 +70,9 @@ defineProps({
     border: 2px solid var(--plum-100);
     border-radius: 50%;
     display: grid;
-    height: 2rem;
+    height: $marker-size;
     place-content: center;
-    width: 2rem;
+    width: $marker-size;
 
     &:before {
       background-color: var(--plum-100);
@@ -83,7 +85,6 @@ defineProps({
 
   &__connector {
     background-color: var(--plum-100);
-    grid-row: span 2;
     justify-self: center;
     width: 2px;
 
